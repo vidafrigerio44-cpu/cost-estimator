@@ -28,15 +28,14 @@ html, body, [class*="css"]  {
 # ------------------------------------------------
 # CENTERED LOGO (Streamlit layout, not CSS)
 # ------------------------------------------------
-# --- LOGO CENTRATO SEMPLICE ---
-st.markdown(
-    "<div style='text-align:center; margin-top:10px; margin-bottom:26px;'>",
-    unsafe_allow_html=True
-)
+# --- LOGO PERFETTAMENTE CENTRATO ---
+col_left, col_center = st.columns([1,1])
 
-st.image("assets/logo.png", width=170)
+with col_left:
+    pass
 
-st.markdown("</div>", unsafe_allow_html=True)
+with col_center:
+    st.image("assets/logo.png", width=170)
 
 # ------------------------------------------------
 # TITLES
