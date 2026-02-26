@@ -1,8 +1,8 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="TEST ICON",
-    page_icon="🐙",
+    page_title="The Next Event | The Next Cost",
+    page_icon="💰",
     layout="centered",
 )
 
