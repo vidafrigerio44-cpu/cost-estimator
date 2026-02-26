@@ -30,7 +30,7 @@ html, body, [class*="css"]  {
 # ------------------------------------------------
 # --- LOGO CENTRATO (come prima) ---
 col_left, col_center, col_right = st.columns([1, 2, 1])
-with col_center:
+with col_left:
     st.image("assets/logo.png", width=170)
 
 # ------------------------------------------------
