@@ -8,7 +8,7 @@ CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQTjdju-TasHTpDjxdIRq
 # PAGE CONFIG
 # ------------------------------------------------
 st.set_page_config(
-    page_title="The Next Event | Cost Estimator",
+    page_title="The Next Event | The Next Cost",
     page_icon="assets/favicon.png",
     layout="centered",
 )
@@ -38,7 +38,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 # TITLES
 # ------------------------------------------------
 st.markdown(
-    "<h1 style='text-align:center;'>Cost Estimator</h1>",
+    "<h1 style='text-align:center;'>The Next Cost</h1>",
     unsafe_allow_html=True
 )
 
