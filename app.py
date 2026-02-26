@@ -22,7 +22,7 @@ st.markdown("""
     font-family: 'JostLocal';
     src: url('assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
-    font-style: normal;
+    font-style: medio;
 }
 
 html, body, [class*="css"], * {
