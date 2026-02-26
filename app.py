@@ -113,7 +113,7 @@ if st.button("Calcola"):
                 text-align:center;
                 color:white;">
                 <div style="font-size:30px; font-weight:600;">
-                    € {weighted_avg:.4f}
+                    € {weighted_avg:.2f}
                 </div>
                 <div style="font-size:14px; opacity:0.85; margin-top:6px;">
                     Scaglione: {bucket} · Record: {len(filtered)}
