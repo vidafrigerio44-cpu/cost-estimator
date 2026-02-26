@@ -9,7 +9,7 @@ CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQTjdju-TasHTpDjxdIRq
 # ------------------------------------------------
 st.set_page_config(
     page_title="The Next Event | The Next Cost",
-    page_icon="assets/favicon.png",
+    page_icon="assets/favicon-v2.png",
     layout="centered",
 )
 
