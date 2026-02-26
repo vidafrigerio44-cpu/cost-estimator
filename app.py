@@ -32,9 +32,9 @@ html, body, [class*="css"]  {
 col_left, col_center, col_right = st.columns([1, 2, 1])
 
 with col_center:
-    st.image("assets/logo.png", width=170)
-
-st.markdown("<br>", unsafe_allow_html=True)
+st.markdown("<div style='text-align:center; margin-top:10px; margin-bottom:26px;'>", unsafe_allow_html=True)
+st.image("assets/logo.png", width=170)
+st.markdown("</div>", unsafe_allow_html=True)
 
 # ------------------------------------------------
 # TITLES
