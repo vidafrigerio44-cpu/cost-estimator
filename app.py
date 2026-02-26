@@ -28,9 +28,8 @@ html, body, [class*="css"]  {
 # ------------------------------------------------
 # CENTERED LOGO (Streamlit layout, not CSS)
 # ------------------------------------------------
-# --- LOGO PERFETTAMENTE CENTRATO ---
+# --- LOGO CENTRATO (come prima) ---
 col_left, col_center, col_right = st.columns([1, 2, 1])
-
 with col_center:
     st.image("assets/logo.png", width=170)
 
