@@ -1,20 +1,21 @@
 import streamlit as st
 import pandas as pd
 import re
-from PIL import Image
 
 CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQTjdju-TasHTpDjxdIRqNpQ1AyiVQF7j0XVFbDBIe-8dDB5HiW_DD87QoR9y1h7CvD_lq452CJVXr9/pub?gid=1299182262&single=true&output=csv"
 
 # ------------------------------------------------
 # PAGE CONFIG
 # ------------------------------------------------
-favicon = Image.open("assets/favicon-v2.png")
+import streamlit as st
 
 st.set_page_config(
-    page_title="The Next Event | The Next Cost",
-    page_icon=favicon,
+    page_title="TEST ICON",
+    page_icon="🔴",
     layout="centered",
 )
+
+# da qui in poi TUTTO il resto (import, CSV_URL, font, logo, ecc.)
 
 # ------------------------------------------------
 # LOAD JOST FONT (robust method)
