@@ -9,6 +9,7 @@ CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQTjdju-TasHTpDjxdIRq
 # ------------------------------------------------
 st.set_page_config(
     page_title="The Next Event | Cost Estimator",
+    page_icon="assets/favicon.png",
     layout="centered",
 )
 
