@@ -1,13 +1,4 @@
 import streamlit as st
-import pandas as pd
-import re
-
-CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQTjdju-TasHTpDjxdIRqNpQ1AyiVQF7j0XVFbDBIe-8dDB5HiW_DD87QoR9y1h7CvD_lq452CJVXr9/pub?gid=1299182262&single=true&output=csv"
-
-# ------------------------------------------------
-# PAGE CONFIG
-# ------------------------------------------------
-import streamlit as st
 
 st.set_page_config(
     page_title="TEST ICON",
@@ -15,7 +6,11 @@ st.set_page_config(
     layout="centered",
 )
 
-# da qui in poi TUTTO il resto (import, CSV_URL, font, logo, ecc.)
+import pandas as pd
+import re
+import base64
+
+CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQTjdju-TasHTpDjxdIRqNpQ1AyiVQF7j0XVFbDBIe-8dDB5HiW_DD87QoR9y1h7CvD_lq452CJVXr9/pub?gid=1299182262&single=true&output=csv"
 
 # ------------------------------------------------
 # LOAD JOST FONT (robust method)
