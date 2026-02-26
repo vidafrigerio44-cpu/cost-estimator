@@ -16,20 +16,37 @@ st.set_page_config(
 # ------------------------------------------------
 # LOAD JOST FONT (robust method)
 # ------------------------------------------------
-st.markdown("""
-<style>
-@font-face {
-    font-family: 'JostLocal';
-    src: url('assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: medio;
-}
+import base64
 
-html, body, [class*="css"], * {
-    font-family: 'JostLocal', sans-serif !important;
-}
-</style>
-""", unsafe_allow_html=True)
+def _load_font_base64(path: str) -> str:
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode("utf-8")
+
+jost_b64 = _load_font_base64("assets/fonts/Jost-VariableFont_wght.ttf")
+
+st.markdown(
+    f"""
+    <style>
+    @font-face {{
+        font-family: 'JostEmbedded';
+        src: url("data:font/ttf;base64,{jost_b64}") format("truetype");
+        font-weight: 100 900;
+        font-style: normal;
+    }}
+
+    html, body, [class*="css"], * {{
+        font-family: 'JostEmbedded', sans-serif !important;
+    }}
+
+    /* Forza un po' il look Jost (più evidente) */
+    h1, h2, h3 {{
+        font-weight: 700 !important;
+        letter-spacing: -0.2px;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 # ------------------------------------------------
 # CENTERED LOGO (Streamlit layout, not CSS)
