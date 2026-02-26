@@ -18,10 +18,15 @@ st.set_page_config(
 # ------------------------------------------------
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap');
+@font-face {
+    font-family: 'JostLocal';
+    src: url('assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
 
-html, body, [class*="css"]  {
-    font-family: 'Jost', sans-serif !important;
+html, body, [class*="css"], * {
+    font-family: 'JostLocal', sans-serif !important;
 }
 </style>
 """, unsafe_allow_html=True)
