@@ -17,10 +17,11 @@ st.set_page_config(
 # LOAD JOST FONT (robust method)
 # ------------------------------------------------
 st.markdown("""
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap');
+
 html, body, [class*="css"]  {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Jost', sans-serif !important;
 }
 </style>
 """, unsafe_allow_html=True)
