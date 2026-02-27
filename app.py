@@ -121,7 +121,7 @@ filtered = df[(df["Item"] == item) & (df["Scaglione_calc"] == bucket)]
 # ------------------------------------------------
 if st.button("Calcola"):
     if filtered.empty:
-        st.warning("Nessun dato storico disponibile.")
+        st.warning("Nessun dato storico disponibile 🥲")
     else:
         weighted_avg = (
             (filtered["Costo_unitario"] * filtered["Quantità"]).sum()
