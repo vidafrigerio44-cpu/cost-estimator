@@ -148,3 +148,20 @@ if st.button("Calcola"):
             """,
             unsafe_allow_html=True
         )
+
+st.markdown("<br><br>", unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <div style="
+        text-align:center;
+        font-size:11px;
+        color:#9aa0a6;
+        margin-top:60px;
+        opacity:0.7;
+        letter-spacing:0.4px;">
+        Made with quiet ambition by Vida
+    </div>
+    """,
+    unsafe_allow_html=True
+)
