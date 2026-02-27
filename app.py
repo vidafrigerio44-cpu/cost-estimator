@@ -89,6 +89,10 @@ def parse_euro(x):
 @st.cache_data(ttl=60)
 def load_db(url):
     df = pd.read_csv(url)
+
+    # prendi solo le colonne che servono
+    df = df[["Item", "Quantità", "Costo_unitario"]].copy()
+
     df.columns = [str(c).strip() for c in df.columns]
 
     df["Item"] = df["Item"].astype(str).str.strip()
