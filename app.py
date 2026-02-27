@@ -160,7 +160,7 @@ st.markdown(
         margin-top:60px;
         opacity:0.7;
         letter-spacing:0.4px;">
-        Made with quiet ambition by Vida
+        Made with quiet ambition by Vida 🦄
     </div>
     """,
     unsafe_allow_html=True
